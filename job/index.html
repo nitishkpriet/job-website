@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MySite — Skills & Jobs</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <!-- Logo -->
+      <a class="logo" href="index.html">MySite</a>
+
+      <!-- Mobile toggle -->
+      <button id="navToggle" class="nav-toggle" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+
+      <!-- Primary navigation -->
+      <nav id="mainNav" class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="jobs.html">Jobs</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a class="btn btn-ghost" href="login.html">Sign in</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero: two-column layout using CSS Grid -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1>Build skills that get you hired</h1>
+          <p class="lead">Personalized learning paths, real-world projects, and smart job recommendations to accelerate your career.</p>
+          <div class="hero-ctas">
+            <a href="signup.html" class="btn btn-primary">Get started</a>
+            <a href="#features" class="btn btn-secondary">Learn more</a>
+          </div>
+        </div>
+
+        <!-- Visual / illustration placeholder -->
+        <div class="hero-visual" aria-hidden="true">
+          <!-- Simple SVG illustration for the landing hero -->
+          <svg width="300" height="200" viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg" role="img">
+            <rect width="300" height="200" rx="12" fill="#f5f8fb" />
+            <circle cx="80" cy="80" r="34" fill="#e6f2ff" />
+            <rect x="140" y="40" width="110" height="26" rx="6" fill="#e6f2ff" />
+            <rect x="140" y="74" width="80" height="18" rx="6" fill="#fff" />
+            <rect x="40" y="130" width="220" height="40" rx="8" fill="#fff" />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features: 3 cards using CSS Grid -->
+    <section id="features" class="features container" aria-label="Platform features">
+      <!-- Feature card 1 -->
+      <article class="feature-card">
+        <!-- Icon (decorative) -->
+        <div class="feature-icon" aria-hidden="true">📚</div>
+        <h3>Curated Learning</h3>
+        <p>Structured paths combining theory, practice, and projects designed by experts.</p>
+      </article>
+
+      <!-- Feature card 2 -->
+      <article class="feature-card">
+        <div class="feature-icon" aria-hidden="true">🧭</div>
+        <h3>Personalized Paths</h3>
+        <p>Adaptive recommendations based on your goals and current skill level.</p>
+      </article>
+
+      <!-- Feature card 3 -->
+      <article class="feature-card">
+        <div class="feature-icon" aria-hidden="true">💼</div>
+        <h3>Job Matching</h3>
+        <p>Smart job suggestions and resume-friendly project highlights to help you stand out.</p>
+      </article>
+    </section>
+  </main>
+
+  <!-- Site footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="logo" href="index.html">MySite</a>
+        <p class="muted">Skills, projects, and opportunities in one place.</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer">
+        <ul>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="jobs.html">Jobs</a></li>
+        </ul>
+      </nav>
+
+      <div class="legal muted">&copy; <span id="year"></span> MySite. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

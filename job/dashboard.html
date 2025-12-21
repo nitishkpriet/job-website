@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard — MySite</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">MySite</a>
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="jobs.html">Jobs</a></li>
+          <li><a href="progress.html">Progress</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Welcome header -->
+    <header class="dashboard-hero">
+      <div>
+        <h1>Welcome back, Alex</h1>
+        <p class="muted">Here's what's happening with your learning and job matches.</p>
+      </div>
+      <div class="dashboard-actions">
+        <a href="skills.html" class="btn btn-secondary">Manage Skills</a>
+        <a href="courses.html" class="btn btn-primary">Find Courses</a>
+      </div>
+    </header>
+
+    <!-- Dashboard cards grid -->
+    <section class="dash-grid" aria-label="Dashboard cards">
+      <!-- Selected Skills -->
+      <article class="dash-card" aria-labelledby="skills-heading">
+        <div class="card-header">
+          <h2 id="skills-heading">Selected Skills</h2>
+          <span class="muted small">4</span>
+        </div>
+        <div class="skill-list">
+          <span class="skill-tag">HTML</span>
+          <span class="skill-tag">CSS</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">React</span>
+        </div>
+      </article>
+
+      <!-- Recommended Courses -->
+      <article class="dash-card" aria-labelledby="courses-heading">
+        <div class="card-header">
+          <h2 id="courses-heading">Recommended Courses</h2>
+          <a href="courses.html" class="muted">See all</a>
+        </div>
+        <div>
+          <div class="course-item"><strong>Responsive Design Basics</strong><div class="muted">4 lessons</div></div>
+          <div class="course-item"><strong>Advanced JavaScript</strong><div class="muted">6 lessons</div></div>
+          <div class="course-item"><strong>Accessibility Fundamentals</strong><div class="muted">3 lessons</div></div>
+        </div>
+      </article>
+
+      <!-- Suggested Jobs -->
+      <article class="dash-card" aria-labelledby="jobs-heading">
+        <div class="card-header">
+          <h2 id="jobs-heading">Suggested Jobs</h2>
+          <a href="jobs.html" class="muted">View all</a>
+        </div>
+        <div>
+          <div class="job-item"><strong>Front-end Developer</strong><div class="muted">Company A — Remote</div></div>
+          <div class="job-item"><strong>UI Engineer</strong><div class="muted">Company B — Onsite</div></div>
+          <div class="job-item"><strong>Junior React Dev</strong><div class="muted">Company C — Remote</div></div>
+        </div>
+      </article>
+
+      <!-- Progress Tracker -->
+      <article class="dash-card" aria-labelledby="progress-heading">
+        <div class="card-header">
+          <h2 id="progress-heading">Progress Tracker</h2>
+          <span class="muted small">Overall</span>
+        </div>
+        <div style="display:grid;gap:0.75rem">
+          <div>
+            <div class="muted small">Responsive Design — <span class="muted">70%</span></div>
+            <div class="progress-wrap"><div class="progress-fill" data-progress="70" style="width:0%"><span class="sr-only">70%</span></div></div>
+          </div>
+          <div>
+            <div class="muted small">Advanced JavaScript — <span class="muted">40%</span></div>
+            <div class="progress-wrap"><div class="progress-fill" data-progress="40" style="width:0%"><span class="sr-only">40%</span></div></div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Recent activity -->
+    <section style="margin-top:1.5rem">
+      <h2>Recent Activity</h2>
+      <ul class="activity-list">
+        <li>Completed lesson: Grid layouts</li>
+        <li>Applied to: Front-end Developer at Company A</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year-dash"></span> MySite.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

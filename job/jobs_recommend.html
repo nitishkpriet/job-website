@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recommended Jobs — MySite</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">MySite</a>
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="jobs.html">Jobs</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <header style="display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-bottom:1rem">
+      <div>
+        <h1>Job matches for your skills</h1>
+        <p class="muted">We suggest roles based on your selected skills.</p>
+      </div>
+      <div><a href="skills_select.html" class="btn btn-secondary">Edit skills</a></div>
+    </header>
+
+    <section id="jobRecommendations" class="job-grid" aria-live="polite">
+      <!-- JS will populate job cards here -->
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year-jobs"></span> MySite.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

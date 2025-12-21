@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Select Skills — MySite</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">MySite</a>
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="jobs.html">Jobs</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Centered card with checkbox list of skills -->
+    <section class="skills-card" aria-labelledby="select-skills">
+      <h1 id="select-skills">Select your skills</h1>
+      <p class="muted">Choose the skills you want to focus on. These are stored locally in your browser.</p>
+
+      <form id="skillsForm">
+        <fieldset>
+          <legend class="sr-only">Available skills</legend>
+
+          <div class="skills-list">
+            <label><input type="checkbox" name="skills" value="Python"> Python</label>
+            <label><input type="checkbox" name="skills" value="Java"> Java</label>
+            <label><input type="checkbox" name="skills" value="SQL"> SQL</label>
+            <label><input type="checkbox" name="skills" value="Communication"> Communication</label>
+            <label><input type="checkbox" name="skills" value="UI/UX"> UI/UX</label>
+          </div>
+        </fieldset>
+
+        <div class="save-skills-wrap">
+          <div class="muted">Saved: <strong id="savedSkillsCount">0</strong></div>
+          <button id="saveSkills" class="btn btn-primary">Save Skills</button>
+        </div>
+      </form>
+
+      <!-- Feedback area (aria-live for assistive technologies) -->
+      <div aria-live="polite" id="skillsFeedback" class="sr-only"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year-skills-select"></span> MySite.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

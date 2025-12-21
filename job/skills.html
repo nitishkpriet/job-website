@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Skills — MySite</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">MySite</a>
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="jobs.html">Jobs</a></li>
+          <li><a href="progress.html">Progress</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="skills-page-header" style="display:flex;align-items:center;justify-content:space-between;gap:1rem">
+      <div>
+        <h1>Skills</h1>
+        <p>Track and manage your skills here.</p>
+      </div>
+      <div style="display:flex;gap:0.5rem">
+        <a href="skills_select.html" class="btn btn-primary">Select Skills</a>
+        <a href="courses_recommend.html" class="btn btn-secondary">Recommended Courses</a>
+        <a href="jobs_recommend.html" class="btn btn-secondary">Job Matches</a>
+      </div>
+    </div>
+
+    <section class="cards-grid">
+      <!-- Example skill cards -->
+      <article class="card">
+        <h3>HTML &amp; Semantics</h3>
+        <p>Basics of semantic markup and accessibility.</p>
+      </article>
+      <article class="card">
+        <h3>Responsive CSS</h3>
+        <p>Layouts, Flexbox, Grid, and media queries.</p>
+      </article>
+      <article class="card">
+        <h3>JavaScript</h3>
+        <p>DOM, events, and simple client-side logic.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year-skills"></span> MySite.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

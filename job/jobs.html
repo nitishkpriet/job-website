@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jobs — MySite</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">MySite</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Job Board</h1>
+
+    <!-- Search form -->
+    <form class="search-form" role="search" action="#">
+      <label for="q" class="sr-only">Search jobs</label>
+      <input id="q" name="q" type="search" placeholder="Search jobs by title or company">
+      <button class="btn" type="submit">Search</button>
+    </form>
+
+    <section class="jobs-list">
+      <article class="card">
+        <h2>Front-end Developer</h2>
+        <p>Company A — Remote</p>
+        <p><a href="#">View</a></p>
+      </article>
+
+      <article class="card">
+        <h2>UX Designer</h2>
+        <p>Company B — Onsite</p>
+        <p><a href="#">View</a></p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year-jobs"></span> MySite.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

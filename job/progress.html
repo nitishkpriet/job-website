@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Progress — MySite</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">MySite</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Your Progress</h1>
+
+    <section class="progress-tracker" aria-labelledby="progress-heading">
+      <h2 id="progress-heading" class="sr-only">Course progress</h2>
+
+      <!-- Overall progress card -->
+      <div class="overall-progress">
+        <div class="overall-header">
+          <h2 class="sr-only">Overall progress</h2>
+          <div>
+            <strong>Overall Progress</strong>
+            <div class="muted">Tracking progress across your active courses</div>
+          </div>
+          <div class="progress-percentage" id="overallPercentage">55%</div>
+        </div>
+
+        <div class="progress-bar-wrap">
+          <div id="overallBar" class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="55">
+            <div class="progress-bar-fill" style="width:55%"></div>
+          </div>
+        </div>
+
+        <div class="progress-controls">
+          <button id="simulateBtn" class="btn btn-primary">Simulate Progress</button>
+          <button id="resetProgress" class="btn btn-secondary">Reset</button>
+        </div>
+      </div>
+
+      <!-- Per-course progress list -->
+      <div class="card">
+        <h3>Course Progress</h3>
+        <ul class="course-progress-list">
+          <li>
+            <div><strong>Responsive Design Basics</strong></div>
+            <div style="flex:1;margin:0 1rem"><progress id="p1" value="70" max="100">70%</progress></div>
+            <div class="muted">70%</div>
+          </li>
+
+          <li>
+            <div><strong>Advanced JavaScript</strong></div>
+            <div style="flex:1;margin:0 1rem"><progress id="p2" value="40" max="100">40%</progress></div>
+            <div class="muted">40%</div>
+          </li>
+
+          <li>
+            <div><strong>Accessibility Fundamentals</strong></div>
+            <div style="flex:1;margin:0 1rem"><progress id="p3" value="25" max="100">25%</progress></div>
+            <div class="muted">25%</div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Completed courses list (populated dynamically) -->
+      <div class="card completed-courses">
+        <h3>Completed Courses</h3>
+        <ul id="completedList">
+          <!-- populated by JS when courses reach 100% -->
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year-progress"></span> MySite.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

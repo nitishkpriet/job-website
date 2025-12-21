@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign up — MySite</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">MySite</a>
+    </div>
+  </header>
+
+  <main class="auth-layout">
+    <div class="container auth-container">
+      <section class="auth-card" aria-labelledby="signup-heading">
+        <h1 id="signup-heading">Create your account</h1>
+
+        <form id="signupForm" action="#" method="post" novalidate>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="you@example.com">
+
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required minlength="6" placeholder="••••••">
+
+          <label for="confirm">Confirm password</label>
+          <input type="password" id="confirm" name="confirm" required minlength="6" placeholder="••••••">
+
+          <div class="form-actions">
+            <a class="muted" href="login.html">Already have an account?</a>
+            <button type="submit" class="btn btn-primary">Sign up</button>
+          </div>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year-signup"></span> MySite.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
